@@ -21,5 +21,7 @@ BOT_NAME: process.env.BOT_NAME || "➺Avishka_X-MD࿐",
 AUTO_REACT: process.env.AUTO_REACT || "true",
 OWNER_REACT: process.env.OWNER_REACT || "true",
 ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "true",
-ANTI_LINK:process.env.ANTI_LINK || "true"
+ANTI_LINK:process.env.ANTI_LINK || "true",
+ANTI_BAD:process.env.ANTI_BAD || "true",
+ANTI_BOT:process.env.ANTI_BOT || " true"
 };

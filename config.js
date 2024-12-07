@@ -6,7 +6,7 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "qbgBmLib#OSFf9T5ezP3LyOfzZZev7M2UnAFKOUvtciK6Cg0qUek",
-ALIVE_IMG: process.env.ALIVE_IMG || "https://media-hosting.imagekit.io//ccc2df49e7554b61/Polish_20241126_212137786.jpg?Expires=1733749456&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qSLw4LboWeWlts3~MlEjNwY1-0kU1xOEqQ0jILm6qeC6JkHmlo3m4t1hsLwNBGgrY8yIT88ZTvCKE1spvyRKnIGkAATOx-uyJPSgc4-pjKLv9BLsWGkc0637dRk4AJofwn1NonLBbjAs-4WhngZxJgv0ZKbRt7NP5bkRLHWCfeOeM-slj2ncOCWorV-3XIOD9hU2TEeCYsMM~A6RkRVPzXNOHjzv7SCjtEdSTwtCPBVbW97lWq5wr1~1Ds7~gy~36j0s~I00~eazCqwP5Yao~wa~N80bfRivsG2R0EMlykWFxliHwXqaoW9YT5vUlYbBa-YUwZzgYaCv8XCcu8PT~A__",
+ALIVE_IMG: process.env.ALIVE_IMG || "",
 ALIVE_MSG: process.env.ALIVE_MSG || "┏━━━━━━━━━━━➤◍◉➤\n│ *🔰𝐇𝐞𝐲 𝐈'𝐦 𝐀𝐯𝐢𝐬𝐡𝐤𝐚_𝐗-𝐌𝐃 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭⚡*\n┗━━━━━━━━━━━━━━━━━━━━\n━➤◍◉➤\n┏━━━━━━━━━━━➤◍◉➤\n│ *🔔𝐈'𝐦 𝐀𝐥𝐢𝐯𝐞 𝐍𝐨𝐰❤️*\n┗━━━━━━━━━━\n━➤◍◉➤\n┏━━━━━━━━━━━➤◍◉➤\n│ *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : 𝐀𝐯𝐢𝐬𝐡𝐤𝐚_𝐗 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲|*\n┗━━━━━━━━━━━━━━━━━━━━\n*2024🤍*\n\n┏━━━━━━━━━━━➤◍◉➤\n*This bot is made by Avishka_X technology.This is made with using Ai.You can use this bot easily.New updates will coming*\n┗━━━━━━━━━━━━━━━━━━━━\n\n🔰❤️ *join with us.....* 🔰❤️\nhttps://chat.whatsapp.com/KjDrxhc9b3f7MwmaoraCPC",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 MODE: process.env.MODE || "public",

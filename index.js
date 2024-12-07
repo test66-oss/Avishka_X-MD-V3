@@ -199,12 +199,75 @@ if (config.ANTI_LINK == "true"){
         }}}
 if (config.ANTI_BAD == "true"){
         if (!isOwner ) {   
-        if (body.match(`Hutto,Pakaya,Ponnaya,Kari,Kariya,Hukapn`)) {
+        if (body.match(`Hutto`)) {
             
         if (isMe) return await reply("Link Derect but I cant Delete link")
         if(groupAdmins.includes(sender)) return
             let ak = `⚠️❗ *Don't use bad word* ⚠️❗`;
         await conn.sendMessage(from, { text: ak }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Ponnaya`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Pako`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Pakaya`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Kari`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Kariya`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Hukapn`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Hukapan`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
         }}}
 
 const events = require('./command')

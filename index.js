@@ -180,8 +180,9 @@ if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { 
 }}
 //=============================//
 if (config.ANTI_LINK == "true"){
-        if (!isOwner && isGroup && isBotAdmins ) {   
-        if (body.match(`chat.whatsapp.com`)) {
+        if (!isOwner ) {   
+        if (body.match(`whatsapp.com`)) {
+        if (body.match(`youtube.com`)) {
             
         if (isMe) return await reply("Link Derect but I cant Delete link")
         if(groupAdmins.includes(sender)) return

@@ -178,6 +178,16 @@ let { data } = await axios.get(url)
 for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
 }}
+//=============================//
+if (config.ANTI_LINK == "true"){
+        if (!isOwner && isGroup && isBotAdmins ) {   
+        if (body.match(`chat.whatsapp.com`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `📌Link Detected Avishka_X-MD📌`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
 
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;

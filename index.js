@@ -203,8 +203,8 @@ if (config.ANTI_BAD == "true"){
             
         if (isMe) return await reply("Link Derect but I cant Delete link")
         if(groupAdmins.includes(sender)) return
-            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
-        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+            let ak = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: ak }, { quoted: mek });  
         }}}
 
 const events = require('./command')

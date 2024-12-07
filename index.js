@@ -182,6 +182,14 @@ if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { 
 if (config.ANTI_LINK == "true"){
         if (!isOwner ) {   
         if (body.match(`whatsapp.com`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `📌Link Detected Avishka_X-MD📌`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_LINK == "true"){
+        if (!isOwner ) {   
         if (body.match(`youtube.com`)) {
             
         if (isMe) return await reply("Link Derect but I cant Delete link")

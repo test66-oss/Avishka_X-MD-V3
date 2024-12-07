@@ -217,7 +217,7 @@ if ( config.ANTI_BOT == "true" && isBotAdmins ) {
 await conn.sendMessage(from, { delete: mek.key })
 await conn.groupParticipantsUpdate(from,[sender], 'remove')
   }}
-    if ( mek.id.startsWith("QUEENAMDI") ) {
+    if ( mek.id.startsWith("PRABATH") ) {
 await conn.sendMessage(from, { text: "❌ ```Another Bot's message Detected :``` *💃 AvishkaX MD* ❗\n*Removed By AvishkaX MD* ❗\n📌Anti Bot System on...📌" })
 if ( config.ANTI_BOT == "true" && isBotAdmins ) {
 await conn.sendMessage(from, { delete: mek.key })

@@ -5,7 +5,11 @@ DisconnectReason,
 jidNormalizedUser,
 getContentType,
 fetchLatestBaileysVersion,
-Browsers
+Browsers,
+generateForwardMessageContent,
+generateWAMessageFromContent,
+prepareWAMessageMedia,
+proto
 } = require('@whiskeysockets/baileys')
 
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')

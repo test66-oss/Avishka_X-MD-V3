@@ -194,7 +194,16 @@ if (config.ANTI_LINK == "true"){
             
         if (isMe) return await reply("Link Derect but I cant Delete link")
         if(groupAdmins.includes(sender)) return
-            let repoInfo = `📌Link Detected Avishka_X-MD📌`;
+            let repoInfo = `📌 *Link Detected by Avishka_X-MD* 📌\n⚠️❗ *Anti link on....* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Hutto,Pakaya,Ponnaya,Kari,Kariya,Hukapn`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
         await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
         }}}
 

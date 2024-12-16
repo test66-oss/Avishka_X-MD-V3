@@ -5,7 +5,7 @@ const fg = require('api-dylux');
 
 // ---------------------- Song Download -----------------------
 cmd({
-    pattern: 'song',
+    pattern: 'song1',
     desc: 'download songs',
     react: "🎧",
     category: 'download',
@@ -77,7 +77,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 //==================== Video downloader =========================
 
 cmd({
-    pattern: 'video',
+    pattern: 'video1',
     desc: 'download videos',
     react: "🎬",
     category: 'download',

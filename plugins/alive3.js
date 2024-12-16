@@ -3,7 +3,7 @@ const os = require("os")
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, Func, fetchJson} = require('../lib/functions')
 const axios = require('axios')
 cmd({
-    pattern: "alive",
+    pattern: "alive3",
     desc: "Check bot online or no.",
     react: "🛠️",
     category: "main",

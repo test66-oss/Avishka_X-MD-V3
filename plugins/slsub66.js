@@ -27,7 +27,7 @@ async (conn, mek, m, { from, q, reply }) => {
 
         // Step 2: Send the search results to the user
         const sentMsg = await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/de82e3.jpg` },
+            image: { url: `https://i.ibb.co/zHLW3WL/044e155205d4f11c.jpg` },
             caption: message,  // Send the description as the caption
             contextInfo: {
                 forwardingScore: 999,

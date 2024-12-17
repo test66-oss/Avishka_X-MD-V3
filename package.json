@@ -41,6 +41,8 @@
     "buffer":"6.0.3",
     "cheerio":"1.0.0-rc.12",
     "@blackamda/telegram-image-url": "1.0.0",
-    "@sl-code-lords/si-subdl" : "^1.1.1"
+    "@sl-code-lords/si-subdl" : "^1.1.1",
+    "@sl-code-lords/movie-api":"1.0.0",
+    "pixaldrain-sinhalasub": "git+https://github.com/DarkMakerofc/pixaldrain-sinhalasub.git"
   }
 }

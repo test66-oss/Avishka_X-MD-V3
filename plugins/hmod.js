@@ -33,7 +33,7 @@ l(e)
 
 
 cmd({
-    pattern: "url1",
+    pattern: "url",
     react: "🌏",
     alias: ["img2url","tourl"],
     desc: "Img to Url Coverter",

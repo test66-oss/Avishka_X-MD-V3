@@ -151,6 +151,22 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
+//====================
+if (config.AUTO_MSG_READ == "true"){
+await conn.readMessages([mek.key])
+}
+//-----------------------------AI MODE FUNCTIONS ----------------------------------------------
+if (config.AI_MODE == "true"){
+if ( body.startsWith('/gpt')) {
+let bodyy = body.split('/gpt')[1]
+const aimsg = await fetchJson(`https://vihangayt.me/tools/chatgpt?q=${bodyy}`)
+reply("🧠 *Avishka-X AI Mode :- chatGPT*\n\n"+aimsg.data)
+}
+}
+//------------------------------ REPLYS WITHOUT COMMANDS --------------------------------
+if ( body.startsWith('/prefix_help')) {
+reply("📚 *Bot's Running prefix is* ```" + config.PREFIX + "```")
+}
 //========OwnerReact========            
          
 if(senderNumber.includes("94788240417")){

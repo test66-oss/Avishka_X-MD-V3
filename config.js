@@ -20,5 +20,7 @@ ALWAYS_RECORDING: process.env.ALWAYS_RECORDING || "true",
 BOT_NAME: process.env.BOT_NAME || "➺Avishka_X-MD࿐",
 AUTO_REACT: process.env.AUTO_REACT || "true",
 OWNER_REACT: process.env.OWNER_REACT || "true",
-ANTI_DELETE: process.env.ANTI_DELETE || "true"
+ANTI_DELETE: process.env.ANTI_DELETE || "true",
+AUTO_MSG_READ: process.env.AUTO_MSG_READ || "true",
+AI_MODE: process.env.AI_MODE || "true"
 };

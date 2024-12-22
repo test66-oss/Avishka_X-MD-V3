@@ -22,5 +22,7 @@ AUTO_REACT: process.env.AUTO_REACT || "true",
 OWNER_REACT: process.env.OWNER_REACT || "true",
 ANTI_DELETE: process.env.ANTI_DELETE || "true",
 AUTO_MSG_READ: process.env.AUTO_MSG_READ || "true",
-AI_MODE: process.env.AI_MODE || "true"
+AI_MODE: process.env.AI_MODE || "true",
+AUTO_STICKER: process.env.AUTO_STICKER || "true",
+AUTO_REPLY: process.env.AUTO_REPLY || "true"
 };

@@ -24,5 +24,6 @@ ANTI_DELETE: process.env.ANTI_DELETE || "true",
 AUTO_MSG_READ: process.env.AUTO_MSG_READ || "true",
 AI_MODE: process.env.AI_MODE || "true",
 AUTO_STICKER: process.env.AUTO_STICKER || "true",
-AUTO_REPLY: process.env.AUTO_REPLY || "true"
+AUTO_REPLY: process.env.AUTO_REPLY || "true",
+LANG: process.env.BOT_LANG || 'EN' 
 };

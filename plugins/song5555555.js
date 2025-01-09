@@ -1,104 +1,98 @@
+const config = require('../config')
 const {cmd , commands} = require('../command')
 const fg = require('api-dylux')
 const yts = require('yt-search')
 cmd({
     pattern: "song",
-    desc: "To download songs.",
-    react: "🎵",
+    desc: "download songs.",
     category: "download",
+    react: "🎧",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-if(!q) return reply("Please give me a url or title")  
-const search = await yts(q)
+if(!q) return reply("> 🔗Please give me a URL or TITLE🔗*")
+const search = await yts (q) 
 const data = search.videos[0];
 const url = data.url
+
+let desc = `▢───────────────────────────▢
+Ӂ ─── Avishka_X-MD sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ 🔊
+▢───────────────────────────▢
+» ᴛɪᴛʟᴇ : ${data.title}
+» ᴀʙᴏᴜᴛ : ${data.description.}
+» ᴅᴜʀᴀᴛɪᴏɴ : ${data.timestamp}
+» ᴀɢᴏ : ${data.ago}
+» ᴠɪᴇᴡꜱ : ${data.views}
+
+ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ ©Avishka_X-MD
+  `
+ await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek})
+ 
+ //download audio
+
+ let down = await fg.yta(url)
+ let downloadUrl = down.dl_url
     
-    
-let desc = `
-⫷⦁[ * '-'_꩜ *Avishka _X-MD* 𝙎𝙊𝙉𝙂 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝙍 ꩜_'-' * ]⦁⫸
+ //send audio+ document message 
 
-🎵 *Song Found!* 
+ await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
+ await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"> ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ ©Avishka_X-MD"},{quoted:mek})
 
-➥ *Title:* ${data.title} 
-➥ *Duration:* ${data.timestamp} 
-➥ *Views:* ${data.views} 
-➥ *Uploaded On:* ${data.ago} 
-➥ *Link:* ${data.url} 
+ 
 
-🎧 *Enjoy the music brought to you by* *Avishka_X-MD*! 
-
-> *Created with ❤️ by Avishka_X* 
-
-> *© Avishka_X - MD* 
-`
-
-await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
-
-//download audio
-
-let down = await fg.yta(url)
-let downloadUrl = down.dl_url
-
-//send audio message
-await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"*© Avishka_X-MD ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ*"},{quoted:mek})
 
 }catch(e){
-console.log(e)
+  console.log(e)
   reply(`${e}`)
 }
 })
 
-//====================video_dl=======================
-
+//--------------------------------------VIDEO-DOWNLOAD------------------------------------------------
+//
 cmd({
     pattern: "video",
-    desc: "To download videos.",
-    react: "🎥",
+    desc: "download videos.",
+    react: "📽️",
     category: "download",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-if(!q) return reply("Please give me a url or title")  
-const search = await yts(q)
+if(!q) return reply(">🔗Please give me a URL or TITLE🔗*")
+const search = await yts (q) 
 const data = search.videos[0];
 const url = data.url
+
+let desc = `▢───────────────────────────▢
+Ӂ ─── Avishka_X-MD ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ 📽️
+▢───────────────────────────▢
+» ᴛɪᴛʟᴇ : ${data.title}
+» ᴀʙᴏᴜᴛ : ${data.description.}
+» ᴅᴜʀᴀᴛɪᴏɴ : ${data.timestamp}
+» ᴀɢᴏ : ${data.ago}
+» ᴠɪᴇᴡꜱ : ${data.views}
+
+ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ ©Avishka_X-MD
+  `
+ await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek})
+ 
+ //download video
+
+ let down = await fg.ytv(url)
+ let downloadUrl = down.dl_url
     
-    
-let desc = `
-⫷⦁[ * '-'_꩜ *Avishka_X-MD* 𝙑𝙄𝘿𝙀𝙊 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝙍 ꩜_'-' * ]⦁⫸ 
+ //send video+ document message 
 
-🎥 *Video Found!* 
+ await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4",caption:"> ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ ©Avishka_X-MD"},{quoted:mek})
+ await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"> ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ ©Avishka_X-MD"},{quoted:mek})
 
-➥ *Title:* ${data.title} 
-➥ *Duration:* ${data.timestamp} 
-➥ *Views:* ${data.views} 
-➥ *Uploaded On:* ${data.ago} 
-➥ *Link:* ${data.url} 
+ 
 
-🎬 *Enjoy the video brought to you by* *Avishka_X-MD*! 
-
-> *Created with ❤️ by Avishka_X-MD* 
-
-> *© Avishka_X-MD - MD* 
-`
-
-await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
-
-//download video
-
-let down = await fg.ytv(url)
-let downloadUrl = down.dl_url
-
-//send video message
-await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"*© Avishka_X-MD ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ*"},{quoted:mek})
 
 }catch(e){
-console.log(e)
+  console.log(e)
   reply(`${e}`)
 }
 })
+

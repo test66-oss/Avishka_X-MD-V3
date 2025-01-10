@@ -45,6 +45,6 @@
     "@sl-code-lords/movie-api":"1.0.0",
     "pixaldrain-sinhalasub": "git+https://github.com/DarkMakerofc/pixaldrain-sinhalasub.git",
     "caliph-api": "^1.0.0",
-    "@dark-yasiya/yt-dl.js": "1.0.5"
+    "@dark-yasiya/yt-dl.js": "latest"
   }
 }

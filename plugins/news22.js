@@ -45,7 +45,7 @@ const msg = `
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
           newsletterName: 'Avishka_X-MD 🥷💗',
-          newsletterJid: "120363337636017852@newsletter",
+          newsletterJid: "120363354060105050@newsletter",
           },
           externalAdReply: {
               title: `Avishka_X-MD News Information`,
@@ -102,7 +102,7 @@ const msg = `
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
           newsletterName: 'Avishka_X-MD 🥷💗',
-          newsletterJid: "120363337636017852@newsletter",
+          newsletterJid: "120363354060105050@newsletter",
           },
           externalAdReply: {
               title: `Avishka_X-MD News Information`,
@@ -161,7 +161,7 @@ const msg = `
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
           newsletterName: ' Avishka_X  |   𝚃𝙴𝙲𝙷 ジ',
-          newsletterJid: "120363337636017852@newsletter",
+          newsletterJid: "120363354060105050@newsletter",
           },
           externalAdReply: {
               title: `Avishka_X-MD News Information`,
@@ -221,7 +221,7 @@ const msg = `
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
           newsletterName: '✅ Avishka_X-MD 🥷💗',
-          newsletterJid: "120363337636017852@newsletter",
+          newsletterJid: "120363354060105050@newsletter",
           },
           externalAdReply: {
               title: `Avishka_X-MD News Information`,

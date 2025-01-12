@@ -18,6 +18,7 @@ const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { DBM } = require('postgres_dbm')
 const { File } = require('megajs')
+const path = require('path')
 const prefix = '.'
 
 const ownerNumber = ['94788240417']

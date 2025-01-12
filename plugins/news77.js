@@ -32,7 +32,7 @@ try{
  ${res.TITLE}\n\n*┃◉* *⇨ ᴅᴀᴛᴇ :*
  ${res.PUBLISHED}\n\n*┃◉* *⇨ ᴜʀʟ :*
  ${res.URL}\n\n*┃◉* *⇨ Description :*
- ${res.DESCRIPTION}\n\n> *POWERED by Queen_Ahinsa-MD*\n\n`},
+ ${res.DESCRIPTION}\n\n> *POWERED by Avishka_X-MD*\n\n`},
 			{ quoted: mek });
 await conn.sendMessage(from, { react: { text: `✅`, key: mek.key }}) 
 } catch (e) {
@@ -66,7 +66,7 @@ async (conn, mek, m, { from, reply }) => {
 ⚠️ _${article.description}_
 🔗 _${article.url}_
 
-> *POWERED by Queen_Ahinsa-MD*
+> *POWERED by Avishka_X-MD*
             `;
 
             console.log('Article URL:', article.urlToImage); // Log image URL for debugging
@@ -123,9 +123,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 image: buffer,
                 caption: `
 *Image ${i + 1} from your search!*
-*ARROW MD IMG DOWNLOADER*
+*Avishka_X-MD IMG DOWNLOADER*
 
-> *POWERED by Queen_Ahinsa-MD* 📸
+> *POWERED by Avishka_X-MD* 📸
 `
 }, { quoted: mek });
 }
@@ -198,7 +198,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         // Send the movie information along with the poster image
         await conn.sendMessage(from, {
             image: { url: imageUrl },
-            caption: `${movieInfo}\n> *POWERED by Queen_Ahinsa-MD*`
+            caption: `${movieInfo}\n> *POWERED by Avishka_X-MD*`
         }, { quoted: mek });
     } catch (e) {
         console.log(e);
@@ -237,7 +237,7 @@ const msg = `
 
 • *Link* - ${news.result.url}
 
-> *POWERED by Queen_Ahinsa-MD*`
+> *POWERED by Avishka_X-MD*`
 
 
 await conn.sendMessage( from, { image: { url: news.result.image || '' }, caption: msg }, { quoted: mek })
@@ -272,7 +272,7 @@ const msg = `
 
 • *Link* - ${news.result.url} 
 
-> *POWERED by Queen_Ahinsa-MD* 
+> *POWERED by Avishka_X-MD* 
 
 `
 
@@ -312,7 +312,7 @@ const msg = `
 
 • *Link* - ${news.result.url} 
 
-> *POWERED by Queen_Ahinsa-MD*`
+> *POWERED by Avishka_X-MD*`
 
 await conn.sendMessage( from, { image: { url: news.result.image || '' }, caption: msg }, { quoted: mek })
 } catch (e) {

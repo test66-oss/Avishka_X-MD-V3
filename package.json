@@ -49,6 +49,7 @@
     "file-type": "^16.5.3",
     "fluent-ffmpeg": "2.1.3",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
-    "@sl-code-lords/esana-news" : "latest"
+    "@sl-code-lords/esana-news" : "latest",
+    "imagemaker.js": "^2.0.4"
   }
 }

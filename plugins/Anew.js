@@ -28,15 +28,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         let desc = `*💚🎵 𝐘𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 🎵💚*
         
-> *\`➤ Title\` :* ${data.title}
+ *\`➤ Title\` :* ${data.title}
 
-> *\`➤ Views\` :* ${data.views}
+ *\`➤ Views\` :* ${data.views}
 
-> *\`➤ DESCRIPTION\`:* ${data.description}
+ *\`➤ DESCRIPTION\`:* ${data.description}
 
-> *\`➤ TIME\`:* ${data.timestamp}
+ *\`➤ TIME\`:* ${data.timestamp}
 
-> *\`➤ AGO\`:* ${data.ago}
+ *\`➤ AGO\`:* ${data.ago}
 
 > *Powered by- :Avishka_X-MD 💚*`;
 
